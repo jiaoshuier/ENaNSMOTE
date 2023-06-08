@@ -18,12 +18,12 @@ end
     
 %     generation
     sample = [];
-num_NaN = [];
+    num_NaN = [];
     a = std(pos_data,0,1); % the standard deviation of each attribute
     for i = find(No~=0)        
     %--------------- Natural neighbor
         k = length(NaN{i});
-num_NaN = [num_NaN k];
+        num_NaN = [num_NaN k];
         if k==0
             continue;
         end
