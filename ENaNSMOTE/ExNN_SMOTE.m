@@ -1,6 +1,5 @@
 
 function [ins_new,avg_NaN] = ExNN_SMOTE(train_instances,categorical)
-% function numNaN = ExNN_SMOTE(train_instances,categorical)
 % generate synthetic examples btw seed and its nature neighbors
 
 % set(0,'defaultfigurecolor','w');
