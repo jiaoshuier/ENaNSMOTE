@@ -1,7 +1,7 @@
 function  [ExNN,r] = ExNN_Search(pos_data)
 
 data = pos_data;
-%% Search RNN  By  NaN_search
+
 %% initialize paramters
 n=size(data,1);
 r=1;
@@ -25,7 +25,7 @@ while r<n
         try
             KNN_idx{i} = [KNN_idx{i} tempidx(r+1)];
         catch ME
-            disp ME£»
+            disp MEÂ£Â»
         end
         try
             RKNN_idx{tempidx(r+1)} = [RKNN_idx{tempidx(r+1)} i];
